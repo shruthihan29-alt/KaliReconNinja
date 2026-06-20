@@ -1,0 +1,34 @@
+# Nmap 7.99 scan initiated Sat Jun 20 11:37:14 2026 as: /usr/lib/nmap/nmap --privileged -A -T4 -oN reports/example.com_2026-06-20_11-37/nmap.txt example.com
+Nmap scan report for example.com (104.20.23.154)
+Host is up (0.028s latency).
+Other addresses for example.com (not scanned): 172.66.147.243 2606:4700:10::6814:179a 2606:4700:10::ac42:93f3
+Not shown: 995 filtered tcp ports (no-response)
+PORT     STATE SERVICE    VERSION
+25/tcp   open  tcpwrapped
+|_smtp-commands: Couldn't establish connection on port 25
+80/tcp   open  tcpwrapped
+|_http-server-header: cloudflare
+443/tcp  open  tcpwrapped
+|_http-server-header: cloudflare
+| ssl-cert: Subject: commonName=example.com
+| Subject Alternative Name: DNS:example.com, DNS:*.example.com
+| Not valid before: 2026-05-31T21:39:12
+|_Not valid after:  2026-08-29T21:41:26
+8080/tcp open  tcpwrapped
+|_http-server-header: cloudflare
+8443/tcp open  tcpwrapped
+| ssl-cert: Subject: commonName=example.com
+| Subject Alternative Name: DNS:example.com, DNS:*.example.com
+| Not valid before: 2026-05-31T21:39:12
+|_Not valid after:  2026-08-29T21:41:26
+|_http-server-header: cloudflare
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+No OS matches for host
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT    ADDRESS
+1   ... 30
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jun 20 11:38:13 2026 -- 1 IP address (1 host up) scanned in 58.69 seconds

@@ -1,0 +1,26 @@
+# Nmap 7.99 scan initiated Sat Jun 20 09:57:48 2026 as: /usr/lib/nmap/nmap --privileged -A -T4 -oN reports/testphp.vulnweb.com_2026-06-20_09-57/nmap.txt testphp.vulnweb.com
+Nmap scan report for testphp.vulnweb.com (44.228.249.3)
+Host is up (0.0077s latency).
+rDNS record for 44.228.249.3: ec2-44-228-249-3.us-west-2.compute.amazonaws.com
+Not shown: 999 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+25/tcp open  smtp?
+|_smtp-commands: SMTP EHLO testphp.vulnweb.com: failed to receive data: connection closed
+| fingerprint-strings: 
+|   NULL: 
+|_    421 4.2.1 please try again later
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port25-TCP:V=7.99%I=7%D=6/20%Time=6A361702%P=x86_64-pc-linux-gnu%r(NULL
+SF:,22,"421\x204\.2\.1\x20please\x20try\x20again\x20later\r\n");
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Actiontec MI424WR-GEN3I WAP (97%), DD-WRT v24-sp2 (Linux 2.4.37) (97%), Microsoft Windows XP SP3 or Windows 7 or Windows Server 2012 (97%), Microsoft Windows XP SP3 (95%), VMware Player virtual NAT device (95%), Linux 3.2 (93%), Linux 4.4 (93%), BlueArc Titan 2100 NAS device (90%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT     ADDRESS
+1   0.44 ms 192.168.48.2
+2   0.54 ms ec2-44-228-249-3.us-west-2.compute.amazonaws.com (44.228.249.3)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jun 20 09:59:08 2026 -- 1 IP address (1 host up) scanned in 80.18 seconds

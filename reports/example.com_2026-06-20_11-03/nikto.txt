@@ -1,0 +1,1 @@
+# Nikto scan completed with no output or errors.

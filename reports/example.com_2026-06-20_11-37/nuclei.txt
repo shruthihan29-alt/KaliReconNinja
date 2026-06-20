@@ -1,0 +1,31 @@
+[dns-waf-detect:cloudflare] [dns] [info] example.com
+[waf-detect:cloudflare] [http] [info] http://example.com
+[rdap-whois:status] [http] [info] https://rdap.verisign.com/com/v1/domain/example.com ["client delete prohibited","client transfer prohibited","client update prohibited"]
+[rdap-whois:lastChangeDate] [http] [info] https://rdap.verisign.com/com/v1/domain/example.com ["2026-01-16T18:26:50Z"]
+[rdap-whois:registrarIANAId] [http] [info] https://rdap.verisign.com/com/v1/domain/example.com ["376"]
+[rdap-whois:registrarName] [http] [info] https://rdap.verisign.com/com/v1/domain/example.com ["RESERVED-Internet Assigned Numbers Authority"]
+[rdap-whois:registrarEmail] [http] [info] https://rdap.verisign.com/com/v1/domain/example.com [""]
+[rdap-whois:nameServers] [http] [info] https://rdap.verisign.com/com/v1/domain/example.com ["ELLIOTT.NS.CLOUDFLARE.COM","HERA.NS.CLOUDFLARE.COM"]
+[rdap-whois:registrationDate] [http] [info] https://rdap.verisign.com/com/v1/domain/example.com ["1995-08-14T04:00:00Z"]
+[rdap-whois:expirationDate] [http] [info] https://rdap.verisign.com/com/v1/domain/example.com ["2026-08-13T04:00:00Z"]
+[rdap-whois:registrarPhone] [http] [info] https://rdap.verisign.com/com/v1/domain/example.com [""]
+[rdap-whois:secureDNS] [http] [info] https://rdap.verisign.com/com/v1/domain/example.com ["true"]
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://example.com
+[http-missing-security-headers:strict-transport-security] [http] [info] http://example.com
+[http-missing-security-headers:content-security-policy] [http] [info] http://example.com
+[http-missing-security-headers:x-frame-options] [http] [info] http://example.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://example.com
+[http-missing-security-headers:referrer-policy] [http] [info] http://example.com
+[http-missing-security-headers:permissions-policy] [http] [info] http://example.com
+[http-missing-security-headers:x-content-type-options] [http] [info] http://example.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://example.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://example.com
+[tech-detect:cloudflare] [http] [info] http://example.com
+[caa-fingerprint] [dns] [info] example.com
+[dmarc-detect] [dns] [info] _dmarc.example.com [""v=DMARC1;p=reject;sp=reject;adkim=s;aspf=s""]
+[spf-record-detect] [dns] [info] example.com ["v=spf1 -all""]
+[txt-fingerprint] [dns] [info] example.com [""_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9"",""v=spf1 -all""]
+[dnssec-detection] [dns] [info] example.com
+[aaaa-fingerprint] [dns] [info] example.com ["2606:4700:10::ac42:93f3","2606:4700:10::6814:179a"]
+[mx-fingerprint] [dns] [info] example.com ["0 ."]
+[nameserver-fingerprint] [dns] [info] example.com ["elliott.ns.cloudflare.com.","hera.ns.cloudflare.com."]

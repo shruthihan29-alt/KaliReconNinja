@@ -1,0 +1,22 @@
+# Nmap 7.99 scan initiated Sat Jun 20 10:36:49 2026 as: /usr/lib/nmap/nmap --privileged -A -T4 -oN reports/example.com_2026-06-20_10-36/nmap.txt example.com
+Nmap scan report for example.com (172.66.147.243)
+Host is up (0.013s latency).
+Other addresses for example.com (not scanned): 104.20.23.154 2606:4700:10::ac42:93f3 2606:4700:10::6814:179a
+Not shown: 995 filtered tcp ports (no-response)
+PORT     STATE SERVICE    VERSION
+25/tcp   open  tcpwrapped
+|_smtp-commands: Couldn't establish connection on port 25
+80/tcp   open  tcpwrapped
+443/tcp  open  tcpwrapped
+8080/tcp open  tcpwrapped
+8443/tcp open  tcpwrapped
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+No OS matches for host
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT    ADDRESS
+1   ... 30
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jun 20 10:38:01 2026 -- 1 IP address (1 host up) scanned in 72.71 seconds

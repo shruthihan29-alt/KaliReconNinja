@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kali Recon Ninja - http://example.com</title>
+    <style>
+        body {font-family:Arial,sans-serif;background:#0f0f0f;color:#00ff00;margin:20px;}
+        h1,h2 {color:#00ccff;}
+        pre {background:#1a1a1a;padding:15px;border-radius:5px;overflow:auto;}
+    </style>
+</head>
+<body>
+    <h1>🔥 Kali Recon Ninja Report</h1>
+    <h2>Target: http://example.com</h2>
+    <h3>Time: 2026-06-20_10-06</h3>
+    <hr>
+    <h2>📡 Nmap Results</h2><pre># Nmap 7.99 scan initiated Sat Jun 20 10:06:02 2026 as: /usr/lib/nmap/nmap --privileged -A -T4 -oN reports/example.com_2026-06-20_10-06/nmap.txt example.com
+Nmap scan report for example.com (172.66.147.243)
+Host is up (0.019s latency).
+Other addresses for example.com (not scanned): 2606:4700:10::6814:179a 2606:4700:10::ac42:93f3 104.20.23.154
+Not shown: 996 filtered tcp ports (no-response)
+PORT     STATE SERVICE    VERSION
+25/tcp   open  tcpwrapped
+|_smtp-commands: Couldn't establish connection on port 25
+80/tcp   open  tcpwrapped
+|_http-server-header: cloudflare
+443/tcp  open  tcpwrapped
+| ssl-cert: Subject: commonName=example.com
+| Subject Alternative Name: DNS:example.com, DNS:*.example.com
+| Not valid before: 2026-05-31T21:39:12
+|_Not valid after:  2026-08-29T21:41:26
+|_http-server-header: cloudflare
+8080/tcp open  tcpwrapped
+|_http-server-header: cloudflare
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+No OS matches for host
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT    ADDRESS
+1   ... 30
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jun 20 10:07:12 2026 -- 1 IP address (1 host up) scanned in 69.95 seconds
+</pre>
+    <h2>📁 Gobuster Results</h2><pre></pre>
+    <h2>🛡️ Nikto Results</h2><pre>Nikto scan failed or no output.</pre>
+    <h2>🔍 WhatWeb Fingerprint</h2><pre>[1m[34mhttp://example.com[0m [200 OK] [1mAllow[0m[[1m[31mGET, HEAD[0m], [1mCountry[0m[[0m[22mUNITED STATES[0m][[1m[31mUS[0m], [1mHTML5[0m, [1mHTTPServer[0m[[1m[36mcloudflare[0m], [1mIP[0m[[0m[22m104.20.23.154[0m], [1mTitle[0m[[1m[33mExample Domain[0m], [1mUncommonHeaders[0m[[0m[22mcf-cache-status,cf-ray[0m]
+</pre>
+    <hr><p><strong>Made with ❤️ on Kali Linux</strong> | Happy Hacking!</p>
+</body>
+</html>

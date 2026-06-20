@@ -1,0 +1,18 @@
+# Nmap 7.99 scan initiated Sat Jun 20 09:40:32 2026 as: /usr/lib/nmap/nmap --privileged -A -T4 -oN reports/testphp.vulnweb.com_2026-06-20_09-40/nmap.txt testphp.vulnweb.com
+Nmap scan report for testphp.vulnweb.com (44.228.249.3)
+Host is up (0.0062s latency).
+rDNS record for 44.228.249.3: ec2-44-228-249-3.us-west-2.compute.amazonaws.com
+Not shown: 999 filtered tcp ports (no-response)
+PORT   STATE SERVICE    VERSION
+25/tcp open  tcpwrapped
+|_smtp-commands: Couldn't establish connection on port 25
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+No OS matches for host
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT    ADDRESS
+1   ... 30
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jun 20 09:41:11 2026 -- 1 IP address (1 host up) scanned in 38.54 seconds

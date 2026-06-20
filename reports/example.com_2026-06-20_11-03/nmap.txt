@@ -1,0 +1,39 @@
+# Nmap 7.99 scan initiated Sat Jun 20 11:03:48 2026 as: /usr/lib/nmap/nmap --privileged -A -T4 -oN reports/example.com_2026-06-20_11-03/nmap.txt example.com
+Nmap scan report for example.com (172.66.147.243)
+Host is up (0.013s latency).
+Other addresses for example.com (not scanned): 104.20.23.154 2606:4700:10::6814:179a 2606:4700:10::ac42:93f3
+Not shown: 995 filtered tcp ports (no-response)
+PORT     STATE SERVICE        VERSION
+25/tcp   open  tcpwrapped
+|_smtp-commands: SMTP EHLO example.com: failed to receive data: connection closed
+80/tcp   open  tcpwrapped
+|_http-server-header: cloudflare
+|_http-title: Example Domain
+443/tcp  open  ssl/tcpwrapped
+| ssl-cert: Subject: commonName=example.com
+| Subject Alternative Name: DNS:example.com, DNS:*.example.com
+| Not valid before: 2026-05-31T21:39:12
+|_Not valid after:  2026-08-29T21:41:26
+|_http-server-header: cloudflare
+|_http-title: Example Domain
+8080/tcp open  tcpwrapped
+|_http-server-header: cloudflare
+8443/tcp open  ssl/tcpwrapped
+|_http-title: 400 The plain HTTP request was sent to HTTPS port
+| ssl-cert: Subject: commonName=example.com
+| Subject Alternative Name: DNS:example.com, DNS:*.example.com
+| Not valid before: 2026-05-31T21:39:12
+|_Not valid after:  2026-08-29T21:41:26
+|_http-server-header: cloudflare
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Actiontec MI424WR-GEN3I WAP (96%), DD-WRT v24-sp2 (Linux 2.4.37) (96%), Linux 3.2 (94%), Linux 4.4 (91%), Microsoft Windows XP SP3 or Windows 7 or Windows Server 2012 (91%), Microsoft Windows XP SP3 (89%), VMware Player virtual NAT device (89%), BlueArc Titan 2100 NAS device (88%), Allied Telesyn AT-9448Ts/XP switch (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT     ADDRESS
+1   0.28 ms 192.168.48.2
+2   0.30 ms 172.66.147.243
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jun 20 11:05:48 2026 -- 1 IP address (1 host up) scanned in 120.81 seconds
